@@ -39,9 +39,10 @@ div[id="tribute-info"]{
 	display: grid;
 	place-items: center;
 	background-color: #280e0c;
-	margin: 5rem;
+	margin: 5rem 8rem;
 	border-radius: 2em;
 }
+ul {list-style: none;}
 
 p[id="chronology"]{
 	margin-top: 2rem;
@@ -72,4 +73,13 @@ a:visited {
 
 a:active {
 	color: cyan;
+}
+
+@media only screen and (max-width: 600px){
+	#tribute-info {margin: 5rem 2rem;}
+	#chronology {margin: 2rem 2rem 0;}
+	#img-div {margin-top: 5rem;}
+	#quote {font-size: 15px;}
+	li {margin: 3rem 1rem 0 0;}
+	li:last-child{margin-bottom: 1.5rem;}
 }
